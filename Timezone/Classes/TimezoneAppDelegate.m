@@ -50,7 +50,7 @@
 	m_Window.backgroundColor = [UIColor blackColor]; 
 	
 	m_RootViewController = [[RootViewController alloc] initWithDST:isDSTAvailableForNorthHemisphere];
-	[m_Window addSubview:m_RootViewController.view];
+    m_Window.rootViewController = m_RootViewController;
 	
 	
     // Override point for customization after application launch

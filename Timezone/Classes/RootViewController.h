@@ -10,7 +10,7 @@
 
 @class FrontViewController, BackViewController;
 
-@interface RootViewController : NSObject {
+@interface RootViewController : UIViewController {
 	UIView*				 m_View;
 	UIButton*			 m_InfoButton;
 	FrontViewController* m_FrontViewController;
@@ -18,7 +18,7 @@
 	BOOL				 m_IsFront;
 }
 
-@property (nonatomic, retain) UIView* view;
+//@property (nonatomic, retain) UIView* view;
 @property (nonatomic, retain) UIButton* infoButton;
 @property (nonatomic, retain) FrontViewController* frontViewController;
 @property (nonatomic, retain) BackViewController* backViewController;
